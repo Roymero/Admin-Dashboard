@@ -27,12 +27,56 @@ body{
    
     grid-row: 1 / 2;
     grid-column: 2 / -1;
-    background-color: blue;
     display: grid;
     grid-template-columns: auto 1fr/ 2fr 1fr;
     padding: 0.5rem 2rem;
     height: 14vh;
 }
+
+.search-container{
+    display: flex;
+    grid-column: 1/1;
+    margin-top: 8px;
+
+}
+
+.profile-container{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    border-radius: 12px;
+    background-color: #e4ddf4;
+    border: none;
+    height: 1.5rem;
+    width: 45vh;
+    margin-top: 7px;
+    
+}
+
+.search-icon{
+
+    height: 3.5vh;
+    margin-right: 12px;
+
+}
+
+.bell-icon{
+
+    height: 3.5vh;
+}
+
+.duddyProfile{
+
+    height: 6vh;
+    width: 6vh;
+    border-radius: 30px;
+}
+
+
 
 
 
