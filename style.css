@@ -292,10 +292,12 @@ input:focus{
 
 .myProjects{
 
-
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-rows: auto 1fr 1fr;
     grid-template-rows: auto 1fr 1fr;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
     gap: 2rem 1rem;
 
@@ -388,4 +390,67 @@ input:focus{
 
     color: purple;
     text-decoration: underline;
+}
+
+.sideContent{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.announcements{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.announcements > h4{
+
+    font-size: 1.4rem;
+    margin:0;
+    margin-bottom: 0.5rem;
+}
+
+.annContents{
+
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    justify-content: space-around;
+    border-radius: 20px;
+
+
+}
+
+
+.announcement h6 {
+
+
+    font-size: 0.9rem;
+    margin: 0;
+
+
+}
+
+.announcement p {
+
+    opacity: 0.7;
+    margin: 0;
+}
+
+
+.announcement-border{
+
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
 }
