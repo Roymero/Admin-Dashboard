@@ -72,15 +72,17 @@ input{
 
 .bell-icon{
 
-    height: 3.5vh;
+    height: 1.7rem;
     margin-top: 12px;
+    cursor: pointer;
 }
 
 .duddyProfile{
 
-    height: 6vh;
-    width: 6vh;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .userNameHeader{
@@ -156,9 +158,62 @@ input{
    display: grid;
    grid-template-rows: auto auto 1fr;
    padding: 1rem;
+   color: white;
 }
 
 
+
+.navTitle{
+    
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.catLogo{
+    height: 3rem;
+}
+
+.dashboard{
+
+    margin: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.sideNav ul {
+    padding: 0;
+}
+
+.sideNav ul li{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.sideNav ul li img{
+
+    height: 2rem;
+    cursor: pointer;
+}
+
+.sideNav ul li p{
+    
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    border: 2px transparent;
+    cursor: pointer;
+}
+
+
+.linkedList{
+
+    
+}
 
 
 /* Center */
