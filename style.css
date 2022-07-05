@@ -50,7 +50,7 @@ body{
     grid-row: 1 / 2;
     display: flex;
     justify-content: center;
-    gap: 2vh
+    gap: 1rem;
 }
 
 input{
@@ -61,6 +61,12 @@ input{
     width: 80vh;
     margin-top: 7px;
     
+}
+
+input:focus{
+
+    outline: none;
+    border: none
 }
 
 .search-icon{
@@ -77,6 +83,13 @@ input{
     cursor: pointer;
 }
 
+.bell-icon:active{
+
+    transform: scale(0.97);
+
+
+}
+
 .duddyProfile{
 
     height: 3rem;
@@ -85,11 +98,27 @@ input{
     cursor: pointer;
 }
 
+.duddyProfile:active{
+
+    transform: scale(0.97);
+
+
+}
+
 .userNameHeader{
 
     font-weight: 600;
     margin-top: 18px;
     font-size: 1.17em;
+    cursor: pointer;
+}
+
+
+.userNameHeader:active{
+
+
+    transform: scale(0.97);
+
 }
 
 .greetings-container{
@@ -128,6 +157,11 @@ input{
     gap: 2rem;
 }
 
+.button-container button:active{
+
+    transform: scale(0.98);
+}
+
 .new, .upload, .share{
 
     border-radius: 25px;
@@ -138,6 +172,7 @@ input{
     height: 2rem;
     width: 6rem;
     font-weight: bold;
+    cursor: pointer;
     
 }
 
@@ -173,6 +208,7 @@ input{
 
 .catLogo{
     height: 3rem;
+    cursor: pointer;
 }
 
 .dashboard{
@@ -205,14 +241,38 @@ input{
     
     font-weight: bold;
     text-shadow: 0 0 5px black;
-    border: 2px transparent;
+    border: 2px solid transparent; /* transparent border so links don't move when you hover over them */ 
     cursor: pointer;
 }
 
 
-.linkedList{
+.sideNav ul li img:hover ~ p{
+
+    border-bottom: 2px solid white;
 
     
+}
+
+.sideNav ul li img:active ~ p{
+
+    transform: scale(0.98);
+
+
+}
+
+
+
+
+.sideNav ul li p:hover{
+
+    border-bottom: 2px solid white;
+}
+
+
+.sideNav ul li p:active{
+
+    transform: scale(0.98);
+
 }
 
 
